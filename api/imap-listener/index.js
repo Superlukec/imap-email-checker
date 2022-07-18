@@ -20,7 +20,7 @@ var imap = new Imap({
     port: process.env.MAIL_PORT,
     tls: true,
     tlsOptions: {
-        servername: 'process.env.MAIL_HOST
+        servername: process.env.MAIL_HOST
     }
 });
 
